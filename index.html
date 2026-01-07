@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BOB BANK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+  <h1>🏦 BOB BANK</h1>
+  <input id="u" placeholder="Username">
+  <input id="p" type="password" placeholder="Password">
+  <input id="pin" type="password" placeholder="PIN">
+  <button onclick="register()">Register</button>
+  <button onclick="login()">Login</button>
+  <p id="msg"></p>
+</div>
+
+<div id="dash" hidden>
+  <h2>Dashboard</h2>
+  <p>Balance: <span id="bal"></span> €</p>
+
+  <input id="to" placeholder="To user">
+  <input id="amount" type="number" placeholder="Amount">
+  <button onclick="transfer()">Send</button>
+
+  <h3>History</h3>
+  <ul id="history"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
